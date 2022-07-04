@@ -1,0 +1,121 @@
+/*================ general styles section start ================== */
+html {
+  font-size: 62.5%;
+}
+* {
+  box-sizing: border-box;
+}
+:root {
+  --color-heading: #ffa500;
+  --color-body: #ddd;
+  --border-radius: 0.7rem;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.8rem;
+  line-height: 1.5;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin-top: 0;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+h1 {
+  font-size: 5rem;
+  font-weight: 700;
+}
+h2 {
+  font-size: 4rem;
+  font-weight: 700;
+}
+/*-------------------- general styles section end------------- */
+
+/*------------utility classes section start------------------  */
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  width: 90%;
+  padding: 3rem;
+}
+.split {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.btn {
+  background-image: linear-gradient(to right, #ff926f, #ff6b4e);
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #fff;
+  border: none;
+  padding: 1.5rem 3rem;
+  border-radius: var(--border-radius);
+  font-size: 1.4rem;
+  text-decoration: none;
+  display: inline-block;
+  white-space: nowrap;
+}
+/*--------------utility classes section end------------------ */
+
+/* ----------------hero section start------------------------ */
+.left-section {
+  flex: 1 0 50%;
+}
+.right-section {
+  margin-left: 4%;
+}
+.hero {
+  background: url(/images/top-banner.png) no-repeat;
+}
+.orange-heading {
+  color: var(--color-heading);
+}
+/*---------------- hero section end -------------------------*/
+
+/* ------------------about section start ---------------------*/
+.dream {
+  background: url(/images/dream-bg.png) no-repeat right;
+}
+/*------------------- about section end-----------------------*/
+
+/*------------------- Recipe section start ---------------*/
+.recipe .split {
+  flex-wrap: wrap;
+  flex-basis: 100%;
+}
+.recipe-card {
+  flex-basis: calc((100% - 4%) / 2);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 0.1rem 1rem 0.3rem rgba(0, 0, 0, 0.15);
+}
+.recipe-heading{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.recipe-heading p{
+  width: 70%;
+}
+
+/* ===================Recipe section end =================*/
+/*------------------- Feedback section start ---------------*/
+
+.feedback .split {
+  justify-content: space-evenly;
+  box-shadow: 0 0.1rem 1rem 0.3rem rgba(0, 0, 0, 0.15);
+  border-radius: 1rem;
+}
+
+/* ===================Feedback section end =================*/
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+}
