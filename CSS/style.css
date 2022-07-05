@@ -39,7 +39,7 @@ h2 {
 
 /*------------utility classes section start------------------  */
 .container {
-  max-width: 120rem;
+  max-width: 140rem;
   margin: 0 auto;
   width: 90%;
   padding: 3rem;
@@ -68,8 +68,8 @@ h2 {
 .left-section {
   flex: 1 0 50%;
 }
-.right-section {
-  margin-left: 4%;
+.hero .right-section {
+  margin-left: -8%;
 }
 .hero {
   background: url(/images/top-banner.png) no-repeat;
@@ -81,7 +81,11 @@ h2 {
 
 /* ------------------about section start ---------------------*/
 .dream {
-  background: url(/images/dream-bg.png) no-repeat right;
+  background: url(/images/about-bg.png) no-repeat;
+  background-size: cover;
+}
+.right-section {
+  margin-left: 6%;
 }
 .dream .left-section {
   display: flex;
@@ -99,7 +103,7 @@ h2 {
   flex-basis: 100%;
 }
 .recipe-card {
-  flex-basis: calc((100% - 4%) / 2);
+  flex-basis: calc((100% - 6%) / 2);
   padding: 1.5rem;
   border-radius: 1rem;
   box-shadow: 0 0.1rem 1rem 0.3rem rgba(0, 0, 0, 0.15);
